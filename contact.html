@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactează Café Aroma pentru rezervări, întrebări sau feedback. Suntem aici să te ajutăm să ai cea mai bună experiență.">
+    <meta property="og:title" content="Contact - Café Aroma">
+    <meta property="og:description" content="Trimite-ne un mesaj sau vizitează-ne la locația din București. Echipa noastră este gata să te ajute.">
+    <meta property="og:image" content="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg">
+    <meta property="og:type" content="website">
+
+    <title>Contact - Café Aroma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Café Aroma</a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Acasă</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services.html" class="nav-link">Servicii</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Contactează-ne</h1>
+            <p>Suntem aici să răspundem la toate întrebările tale</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section fade-in-element">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Trimite-ne un Mesaj</h2>
+                    <p class="form-description">Completează formularul de mai jos și îți vom răspunde în cel mai scurt timp posibil.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nume Complet</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                autocomplete="name"
+                                aria-describedby="nameError">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresă Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                aria-describedby="emailError">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon (opțional)</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel"
+                                aria-describedby="phoneError">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subiect</label>
+                            <select id="subject" name="subject" required aria-describedby="subjectError">
+                                <option value="">Selectează un subiect</option>
+                                <option value="rezervare">Rezervare</option>
+                                <option value="eveniment">Eveniment Privat</option>
+                                <option value="workshop">Workshop Barista</option>
+                                <option value="catering">Catering</option>
+                                <option value="altele">Altele</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                aria-describedby="messageError"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Trimite Mesajul
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Informații de Contact</h2>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Locație</h3>
+                            <p>Strada Cafenelelor Nr. 123</p>
+                            <p>Sector 1, București 010101</p>
+                            <p>România</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Telefon</h3>
+                            <p><a href="tel:+40722123456">0722 123 456</a></p>
+                            <p><a href="tel:+40212345678">021 234 5678</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@cafearoma.ro">contact@cafearoma.ro</a></p>
+                            <p><a href="mailto:evenimente@cafearoma.ro">evenimente@cafearoma.ro</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h3>Program</h3>
+                            <p><strong>Luni - Vineri:</strong><br>07:00 - 21:00</p>
+                            <p><strong>Sâmbătă - Duminică:</strong><br>08:00 - 22:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Urmărește-ne</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook" class="social-icon">f</a>
+                            <a href="#" aria-label="Instagram" class="social-icon">ig</a>
+                            <a href="#" aria-label="LinkedIn" class="social-icon">in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section fade-in-element">
+        <div class="map-placeholder">
+            <div class="map-overlay">
+                <div class="map-content">
+                    <h3>Vizitează-ne la Locație</h3>
+                    <p>Strada Cafenelelor Nr. 123, București</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">Deschide în Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toastMessage"></span>
+        </div>
+        <button class="toast-close" id="toastClose" aria-label="Close notification">&times;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Café Aroma</h3>
+                    <p>Pasiunea noastră este să oferim cea mai bună experiență a cafelei în fiecare zi.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Link-uri Rapide</h3>
+                    <ul>
+                        <li><a href="/">Acasă</a></li>
+                        <li><a href="/services.html">Servicii</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Program</h3>
+                    <p>Luni - Vineri: 07:00 - 21:00</p>
+                    <p>Sâmbătă - Duminică: 08:00 - 22:00</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Str. Cafenelelor Nr. 123</p>
+                    <p>București, România</p>
+                    <p>Tel: 0722 123 456</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café Aroma. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/form-validation.js"></script>
+</body>
+</html>
