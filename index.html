@@ -1,16 +1,176 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Coffee Shop Portfolio Website</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Café Aroma - O experiență unică pentru pasionații de cafea de specialitate. Descoperă arome autentice într-o atmosferă relaxantă.">
+    <meta property="og:title" content="Acasă - Café Aroma">
+    <meta property="og:description" content="Descoperă cea mai bună cafea de specialitate la Café Aroma.">
+    <meta property="og:image" content="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg">
+    <meta property="og:type" content="website">
+
+    <title>Acasă - Café Aroma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Café Aroma</a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Acasă</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Servicii</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descoperă Adevărata Cafea</h1>
+            <p class="hero-subtitle">O experiență unică pentru pasionații de arome autentice</p>
+            <div>
+                <a href="services.html" class="btn btn-primary" style="margin-right: 15px;">Vezi Meniul</a>
+                <a href="contact.html" class="btn btn-secondary">Rezervă o Masă</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-section fade-in-element">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/2059/restaurant-people-alcohol-bar.jpg" 
+                         alt="Interior Café Aroma" 
+                         loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2 style="color: var(--color-primary-800); margin-bottom: var(--spacing-2);">Povestea Noastră</h2>
+                    <div class="section-divider" style="margin: 0 0 var(--spacing-4) 0;"></div>
+                    <p>Café Aroma s-a născut din dorința de a oferi o cafea excepțională într-o atmosferă primitoare. Selecționăm cu grijă cele mai bune boabe de la ferme sustenabile și le prăjim local pentru a asigura prospețimea perfectă.</p>
+                    <p>Echipa noastră de barista pasionați este pregătită să îți transforme fiecare ceașcă de cafea într-o experiență memorabilă, fie că ești în grabă dimineața sau vrei să te relaxezi după-amiaza.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Origini de Cafea</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">Clienți Fericiți</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Barista Premiați</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section fade-in-element">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce Ne Recomandă</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Ne dedicăm calității și ne dorim ca fiecare vizită a ta să fie perfectă.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">☕</div>
+                    <h3>100% Arabica</h3>
+                    <p>Cafea de specialitate proaspăt prăjită, extrasă perfect pentru un gust echilibrat și plin de savoare.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥐</div>
+                    <h3>Patiserie Artizanală</h3>
+                    <p>Croissante și prăjituri proaspete, coapte în fiecare dimineață după rețete tradiționale franțuzești.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Sustenabilitate</h3>
+                    <p>Folosim ambalaje eco-friendly și colaborăm cu furnizori care respectă mediul înconjurător.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Spațiu de Lucru</h3>
+                    <p>Wi-Fi rapid și prize la dispoziție, un mediu ideal pentru a lucra sau a studia în liniște.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section fade-in-element">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ești pregătit pentru o pauză delicioasă?</h2>
+                <p>Te așteptăm cu cafeaua caldă și zâmbete pe măsură. Treci pe la noi sau contactează-ne pentru detalii.</p>
+                <a href="contact.html" class="btn btn-secondary">Contactează-ne</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Café Aroma</h3>
+                    <p>Pasiunea noastră este să oferim cea mai bună experiență a cafelei în fiecare zi.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Link-uri Rapide</h3>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="services.html">Servicii</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Program</h3>
+                    <p>Luni - Vineri: 07:00 - 21:00</p>
+                    <p>Sâmbătă - Duminică: 08:00 - 22:00</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Str. Cafenelelor Nr. 123</p>
+                    <p>București, România</p>
+                    <p>Tel: 0722 123 456</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café Aroma. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
 </html>
