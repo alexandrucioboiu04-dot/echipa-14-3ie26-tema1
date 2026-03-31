@@ -840,6 +840,37 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Franchise Page */
+.franchise-highlight {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+.franchise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.franchise-step {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-5);
+  box-shadow: var(--shadow-md);
+}
+
+.franchise-step h3 {
+  color: var(--color-primary-800);
+  margin-bottom: var(--spacing-3);
+}
+
+.franchise-step p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
 /* CTA Section */
 .cta-section {
   background: linear-gradient(
